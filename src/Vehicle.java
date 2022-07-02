@@ -54,23 +54,4 @@ public class Vehicle {
         System.out.println("Identificatorul producatorului este: " + producerIdentifier);
     }
 
-    public boolean checkVin() {
-        char letters[] = {'A', 'B', 'C', 'D'};
-        int    codes[] = {1, 2, 3, 4};
-        int[] weigth = {8, 7, 6, 5 };
-        int[] values = new int[vin.length()];
-        int product = 0;
-        for (int i = 0; i < vin.length(); i++) {
-            char ch = vin.charAt(i);
-            for (int j = 0; j < letters.length; j++) {
-                if (letters[j] == ch) {
-                    values[i] = codes[j];
-                    break;
-                }
-            }
-        }
-
-        product += values[0] * weigth[0];
-     return false;
-    }
 }
